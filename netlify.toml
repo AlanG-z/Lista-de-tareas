@@ -4,8 +4,9 @@
   publish = "public"
 
 [build.environment]
-  # Ignorar rutas de documentación en escaneo de secretos
+  # Ignorar archivos y variables legítimas en escaneo de secretos
   SECRETS_SCAN_OMIT_PATHS = "DEPLOYMENT.md,NETLIFY.md,.github/**"
+  SECRETS_SCAN_OMIT_KEYS = "NODE_ENV"
 
 [dev]
   command = "npm run dev"
