@@ -3,6 +3,10 @@
   functions = "netlify/functions"
   publish = "public"
 
+[build.environment]
+  # Ignorar rutas de documentación en escaneo de secretos
+  SECRETS_SCAN_OMIT_PATHS = "DEPLOYMENT.md,NETLIFY.md,.github/**"
+
 [dev]
   command = "npm run dev"
   port = 3000
