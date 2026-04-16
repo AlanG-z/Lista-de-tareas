@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "tareas": {
+      "description": "API para gestionar tareas"
+    },
+    "health": {
+      "description": "Health check endpoint"
+    }
+  }
+}

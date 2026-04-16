@@ -1,0 +1,61 @@
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ab3535;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    min-width: 300px;
+    animation: slideIn 0.3s ease;
+}
+
+.alert-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.alert-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.alert-hidden {
+    display: none;
+}
+
+/* Variantes de colores */
+.alert.success {
+    background: #27ae60;
+}
+
+.alert.error {
+    background: #e74c3c;
+}
+
+.alert.warning {
+    background: #f39c12;
+}
+
+.alert.info {
+    background: #3498db;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
